@@ -1,0 +1,25 @@
+:root { /* Definição das cores pra ficar mais fácil de manter a consistência */
+    --azul-chamativo: blue;
+    --texto-padrao: black;
+    --texto-branco: white;
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--azul-chamativo);
+    color: var(--texto-branco);
+}
+.top a {
+    color: var(--texto-branco);
+    text-decoration: none;
+}
