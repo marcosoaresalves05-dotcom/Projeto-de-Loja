@@ -1,5 +1,6 @@
 :root { /* Definição das cores pra ficar mais fácil de manter a consistência */
-    --azul-chamativo: blue;
+    --cinza-dark: rgb(34, 34, 34);
+    --Carmesin: #dc143c;
     --texto-padrao: black;
     --texto-branco: white;
 }
@@ -8,18 +9,42 @@
 }
 main {
     max-width: 960px;
-    margin: 0 auto;
-    padding: 24px;
+    padding: 20px;
+    background: image(url(Images/pro.jpg))
 }
 .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: var(--azul-chamativo);
+    padding: 12px 24px;
+    background: var(--cinza-dark);
+    width: 100%;
     color: var(--texto-branco);
+    left: 0;
+    top: 0;
 }
-.top a {
+a {
     color: var(--texto-branco);
     text-decoration: none;
+    line-height: 1.3;
+    transition: 0.4s;
+    font-size: 20;
+}
+a:hover {
+    color: var(--Carmesin);
+}
+#cadastro form{
+    background: brown;
+}
+footer {
+    background: var(--cinza-dark);
+    width: 100%;
+    color: var(--texto-branco);
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+body {
+    padding-bottom: 75px;
 }
