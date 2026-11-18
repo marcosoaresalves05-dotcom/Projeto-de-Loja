@@ -33,10 +33,10 @@
 
             <form>
 
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
-                <input type="text" id="snome" name="nome2" placeholder="Sobrenome" required>
-                <input type="email" id="email" name="email" placeholder="E-Mail" required>
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required class="input">
+                <input type="text" id="snome" name="nome2" placeholder="Sobrenome" required class="input">
+                <input type="email" id="email" name="email" placeholder="E-Mail" required class="input">
+                <input type="password" id="senha" name="senha" placeholder="Senha" required class="input"><input id="check" type="checkbox" onclick="mostrarSenha()">
                 <input type="submit" id="enviar" value="Cadastrar">
                 <p class="troca">já tem conta? Entre nela <a id="linkbranco" href="login.html">Aqui</a></p>
 
@@ -49,6 +49,8 @@
         </div>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 

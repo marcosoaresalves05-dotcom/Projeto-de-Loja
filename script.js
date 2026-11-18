@@ -1,11 +1,11 @@
 // ===== 1. DADOS: array de objetos =====
 let produtos = [
-  { nome: "PLACA MÃE",                 categoria: "HARDWARE",  preco:  350.0,  imagem: "img/placamãe2.png", link: "https://www.mercadolivre.com.br" },
-  { nome: "SSD",                       categoria: "HARDWARE",  preco: 139.9, imagem: "img/SSD1TB.png",  link: "https://www.mercadolivre.com.br" },
-  { nome: "PC GAMER",                  categoria: "COMPUTADORES",preco: 1500.0,  imagem: "img/pcgamer.png",   link: "https://www.mercadolivre.com.br" },
-  { nome: "PC WORKSTATION",            categoria: "COMPUTADORES",preco: 3800.0,  imagem: "img/workstation.png",  link: "https://www.mercadolivre.com.br" },
-  { nome: "SUPORTE MONITOR",           categoria: "MONITORES",  preco: 70.0,   imagem: "img/suporte.png",   link: "https://www.mercadolivre.com.br" },
-  { nome: "MONITOR CASA E ESCRITORIO", categoria: "MONITORES",  preco: 280.0,  imagem: "img/monitor.png",  link: "https://www.mercadolivre.com.br" }
+  { nome: "PLACA MÃE",                 categoria: "HARDWARE",  preco:  350.0,  imagem: "img/placamãe2.jpeg", link: "https://www.mercadolivre.com.br" },
+  { nome: "SSD",                       categoria: "HARDWARE",  preco: 139.9, imagem: "img/ssd1tb.jpg",  link: "https://www.mercadolivre.com.br" },
+  { nome: "PC GAMER",                  categoria: "COMPUTADORES",preco: 1500.0,  imagem: "img/pcgamer.jpeg",   link: "https://www.mercadolivre.com.br" },
+  { nome: "PC WORKSTATION",            categoria: "COMPUTADORES",preco: 3800.0,  imagem: "img/workstation.jpeg",  link: "https://www.mercadolivre.com.br" },
+  { nome: "SUPORTE MONITOR",           categoria: "MONITORES",  preco: 70.0,   imagem: "img/suporte.jpeg",   link: "https://www.mercadolivre.com.br" },
+  { nome: "MONITOR CASA E ESCRITORIO", categoria: "MONITORES",  preco: 280.0,  imagem: "img/monitor.jpeg",  link: "https://www.mercadolivre.com.br" }
 ];
 
 let carrinho = [];
@@ -66,7 +66,7 @@ function mostrarVitrine() {
             <span class="preco">${formatarPreco(p.preco)}</span>
             <div class="botoes">
               <button class="btn-add" onclick="adicionarAoCarrinho(${i})">Adicionar</button>
-              <a class="link-externo" href="${p.link}" target="_blank" rel="noopener">Ver na loja</a>
+              <a id="linkbranco" href="${p.link}" target="_blank" rel="noopener">Ver na loja</a>
             </div>
           </div>
         </article>`;
@@ -169,6 +169,14 @@ function carregar() {
   if (localStorage.getItem("tema") == "escuro") {
     document.body.classList.add("escuro");
     document.getElementById("btn-tema").textContent = "Tema claro";
+  }
+}
+function mostrarSenha() {
+  var x = document.getElementById("senha");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password"
   }
 }
 

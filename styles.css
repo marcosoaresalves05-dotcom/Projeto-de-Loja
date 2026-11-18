@@ -2,13 +2,14 @@
 manter a consistência */
 :root { 
     --cinza-dark: rgb(34, 34, 34);
-    --carmesin: #dc143c;
-    --carmesin-highlight: rgb(241, 161, 177);
+    --accent: rgb(134, 199, 255);
+    --highlight: rgb(197, 228, 255);
     --texto-padrao: black;
     --texto-branco: white;
     --fundo-branco: #ffff;
     --tema-escuro: #24292e;
     --borda-padrao: #a1a1a1;
+    --zap: #00d756;
 }
 * {
     box-sizing: border-box;
@@ -45,7 +46,7 @@ a {
     font-size: 20;
 }
 #link:hover {
-    color: var(--carmesin);
+    color: var(--accent);
 }
 footer {
     background: var(--cinza-dark);
@@ -61,6 +62,7 @@ body {
 }
 .form {
     padding-top: 150px;
+    align-items: center;
 }
 .formulario {
     width: 500px;
@@ -69,10 +71,10 @@ body {
     padding: 20px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding-top: 35px;
+    justify-content: center;
 }
 input {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin-bottom: 20px;
     border: 3px solid var(--borda-padrao);
@@ -85,10 +87,11 @@ input {
     width: 30%;
 }
 #enviar:hover {
-    border: 3px solid var(--carmesin);
-    background-color: var(--carmesin-highlight);
+    border: 3px solid var(--accent);
+    background-color: var(--highlight);
 }
 .form {
+    align-items: center;
     text-align: center;
 }
 .troca {
@@ -97,9 +100,11 @@ input {
 }
 #linkbranco {
     color: var(--tema-escuro);
+    text-decoration: none;
+    font-weight: bold;
 }
 #linkbranco:hover {
-    color: var(--carmesin);
+    color: var(--accent);
 }
 button {
     border: solid var(--borda-padrao);
@@ -109,8 +114,8 @@ button {
     padding: 10px 20px;
 }
 button:hover {
-    border: solid var(--carmesin);
-    background-color: var(--carmesin-highlight);
+    border: solid var(--accent);
+    background-color: var(--highlight);
 }
 .vitrine {
   display: grid;
@@ -125,9 +130,87 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-.produto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-.produto .corpo { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-.produto h3 { margin: 0; font-size: 1.05rem; }
-.produto .categoria { font-size: 0.8rem; color: var(--destaque); font-weight: bold; }
-.produto .preco { font-size: 1.2rem; font-weight: bold; }
-.produto .botoes { display: flex; gap: 8px; margin-top: auto; flex-wrap: wrap; }
+.produto img { 
+    width: 100%; 
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
+    display: block; 
+}
+.produto .corpo { 
+    padding: 12px; 
+    display: flex; 
+    flex-direction: 
+    column; 
+    gap: 6px; flex: 1; 
+    background-color: aliceblue;
+}
+.escuro .produto .corpo { 
+    background-color: aliceblue;
+    color: black;
+}
+.produto h3 { 
+    margin: 0; 
+    font-size: 1.05rem; 
+}
+.produto .categoria { 
+    font-size: 0.8rem; 
+    color: var(--accent); 
+    font-weight: bold; 
+}
+.produto .preco { 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+}
+.produto .botoes { 
+    display: flex; 
+    gap: 8px; 
+    margin-top: auto; 
+    flex-wrap: wrap; }
+
+.check, .senha {
+    display: flex;
+}
+.vitrine {
+    padding-top: 30px;
+}
+.carrinho {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 28px;
+}
+.carrinho ul { 
+    list-style: none; 
+    padding: 0; margin: 0; 
+}
+.carrinho li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--borda);
+}
+.total { 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+}
+.acoes { 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+.btn-zap {
+  background: var(--zap);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-zap:hover {
+  background: var(--zap);
+  cursor: pointer;
+}
