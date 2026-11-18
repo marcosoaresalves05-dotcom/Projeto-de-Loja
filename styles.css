@@ -2,10 +2,13 @@
 manter a consistência */
 :root { 
     --cinza-dark: rgb(34, 34, 34);
-    --Carmesin: #dc143c;
+    --carmesin: #dc143c;
+    --carmesin-highlight: rgba(219, 20, 60, 0.1);
     --texto-padrao: black;
     --texto-branco: white;
+    --fundo-branco: #ffff;
     --tema-escuro: #24292e;
+    --borda-padrao: #a1a1a1;
 }
 * {
     box-sizing: border-box;
@@ -35,7 +38,7 @@ main {
     top: 0;
     position: fixed;
 }
-a{
+a {
     color: none;
 }
 #link {
@@ -46,10 +49,7 @@ a{
     font-size: 20;
 }
 #link:hover {
-    color: var(--Carmesin);
-}
-#cadastro form{
-    background: brown;
+    color: var(--carmesin);
 }
 footer {
     background: var(--cinza-dark);
@@ -63,34 +63,52 @@ footer {
 body {
     padding-top: 35px;
 }
-#cadastro {
-    align-items: center;
-}
-button {
-    margin-top: 15px;
-    background-color: inherit;
-    border: solid;
-    color: var(--texto-branco);
-    padding: 7px 5px;
+.formulario {
+    width: 500px;
+    margin: 50px auto;
+    background: var(--fundo-branco);
+    padding: 20px;
     border-radius: 7px;
-    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid var(--borda-padrao);
+    border-radius: 7px;
+}
+#enviar {
+    border: 3px solid var(--borda-padrao);
     cursor: pointer;
     transition: 0.4s;
 }
-button:hover {
-    background-color: white;
-    transition: 0.4s;
-    color: var(--texto-padrao);
+#enviar:hover {
+    border: 3px solid var(--carmesin);
+    background-color: var(--carmesin-highlight);
 }
-#retorno {
-    text-decoration: none;
-    color: none;
+.form {
+    text-align: center;
+}
+.troca {
+    color: black;
+    font-size: 15px;
+}
+#linkbranco {
+    color: var(--tema-escuro);
+}
+#linkbranco:hover {
+    color: var(--carmesin);
+}
+button {
+    border: solid var(--borda-padrao);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.4s;
     padding: 10px 20px;
-    transition: 0.4s;
 }
-#retorno:hover {
-    color: var(--texto-padrao);
-    background-color: var(--Carmesin);
-    transition: 0.4s;
-    border: solid white;
+button:hover {
+    border: solid var(--carmesin);
+    background-color: var(--carmesin-highlight);
 }
+
