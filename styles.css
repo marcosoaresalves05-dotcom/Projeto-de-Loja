@@ -1,7 +1,7 @@
 /* Declaração das cores pra ficar mais fácil de
 manter a consistência */
 :root { 
-    --cinza-dark: rgb(34, 34, 34);
+    --azul-paginado: rgb(0, 15, 48);
     --accent: rgb(134, 199, 255);
     --highlight: rgb(197, 228, 255);
     --texto-padrao: black;
@@ -50,7 +50,7 @@ a {
     color: var(--accent);
 }
 footer {
-    background: var(--cinza-dark);
+    background: var(--azul-cabecalho);
     width: 100%;
     color: var(--texto-branco);
     position: absolute;
@@ -96,7 +96,7 @@ input {
     text-align: center;
 }
 .troca {
-    color: black;
+    color: var(--texto-padrao);
     font-size: 15px;
 }
 #linkbranco {
@@ -147,7 +147,7 @@ button:hover {
 }
 .escuro .produto .corpo { 
     background-color: aliceblue;
-    color: black;
+    color: var(--texto-padrao);
 }
 .produto h3 { 
     margin: 0; 
@@ -169,7 +169,7 @@ button:hover {
     flex-wrap: wrap; }
 
 .check {
-    color: black;
+    color: var(--texto-padrao);
 }
 .vitrine {
     padding-top: 30px;
