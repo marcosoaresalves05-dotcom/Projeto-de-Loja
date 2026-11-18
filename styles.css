@@ -7,7 +7,7 @@ manter a consistência */
     --texto-padrao: black;
     --texto-branco: white;
     --fundo-branco: #ffff;
-    --tema-escuro: #24292e;
+    --tema-escuro: rgb(4, 8, 17);
     --borda-padrao: #a1a1a1;
     --zap: #00d756;
 }
@@ -28,7 +28,8 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 5px 24px;
-    background: var(--cinza-dark);
+    background-image: url(img/stars.jpg);
+    background-position: 0;
     width: 100%;
     color: var(--texto-branco);
     left: 0;
