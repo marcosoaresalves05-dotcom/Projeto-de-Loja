@@ -10,26 +10,42 @@
 
 </head>
 
-<body class="form">
+    <header class="top">
 
-    <h1>Entrar na conta</h1>
+        <h2>Pulsar Informática</h2>
 
-    <div class="formulario">
+        <nav>
+            <a id="link" href="login.html">Entre</a>
+            ou
+            <a id="link" href="cadastro.html">Cadastre-se</a>
+            <button id="btn-tema" class="btn-tema" onclick="alternarTema()">Tema escuro</button>
+        </nav>
 
-        <form>
+    </header>
 
-            <input type="email" id="email" name="email" placeholder="E-Mail" required>
-            <input type="password" id="senha" name="senha" placeholder="Senha" required>
-            <input type="submit" id="enviar" value="Entrar">
-            <p class="troca">Não tem conta? Crie uma <a id="linkbranco" href="cadastro.html">Aqui</a></p>
+<body>
+    <main class="form">
 
-        </form>
-        
-        <a href="index.html">
-            <button>Voltar</button>
-        </a>
+        <h1>Entrar na conta</h1>
 
-    </div>
+        <div class="formulario">
+
+            <form>
+
+                <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input type="submit" id="enviar" value="Entrar">
+                <p class="troca">Não tem conta? Crie uma <a id="linkbranco" href="cadastro.html">Aqui</a></p>
+
+            </form>
+            
+            <a href="index.html">
+                <button>Voltar</button>
+            </a>
+
+        </div>
+
+    </main>
 
 </body>
 
