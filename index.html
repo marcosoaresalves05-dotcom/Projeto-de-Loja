@@ -8,100 +8,39 @@
         <link rel="icon" type="image/x-icon" href="Images/placeholder.png">
         <title>Pulsar Informática</title> <!-- Nome que vai aparecer na barra de pesquisa, não na página inicial -->
         
-    </head>
+    </head> 
 
     <header class="top">
 
         <h2>Pulsar Informática</h2>
 
         <nav>
-            <a id="link" href="login.html">Entrar</a>
+            <a id="link" href="login.html">Entre</a>
             ou
             <a id="link" href="cadastro.html">Cadastre-se</a>
+            <button id="btn-tema" class="btn-tema" onclick="alternarTema()">Tema escuro</button>
         </nav>
 
     </header>
 
     <body>
 
-        <main class="produtos">
+        <main>
             <h1>Bem-vindo à nossa loja!</h1>
             <p>Produtos de informática, Periféricos, Acessórios e Celulares nos melhores preços, Só aqui!</p>
+                <div id="filtros" class="filtros"></div>
+                <div id="vitrine" class="vitrine"></div>
+            <section id="carrinho" class="carrinho">
+                <h2>Seu carrinho</h2>
+                <p>Você tem <span id="qtd">0</span> <span id="palavra">itens</span> no carrinho.</p>
+                <ul id="lista-carrinho"></ul>
+                <p class="total">Total: <span id="total">R$ 0,00</span></p>
+                <div class="acoes">
+                    <button class="btn-zap" onclick="enviarWhatsApp()">Pedir pelo WhatsApp</button>
+                    <button class="btn-limpar" onclick="limparCarrinho()">Esvaziar</button>
+                </div>
+                </section>
         </main>
-        
-        <img src="Images/placeholder.png" alt="placeholder">
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>Lorem ipsum dolor</h1>
-        <p>sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque 
-        sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-        diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         
     <script src="script.js"></script>
 

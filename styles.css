@@ -3,7 +3,7 @@ manter a consistência */
 :root { 
     --cinza-dark: rgb(34, 34, 34);
     --carmesin: #dc143c;
-    --carmesin-highlight: rgba(219, 20, 60, 0.1);
+    --carmesin-highlight: rgb(241, 161, 177);
     --texto-padrao: black;
     --texto-branco: white;
     --fundo-branco: #ffff;
@@ -13,8 +13,7 @@ manter a consistência */
 * {
     box-sizing: border-box;
 }
-/* ———————Ativação manual de tema escuro (para testes)——————— */
-body {
+.escuro {
     background-color: var(--tema-escuro);
     color: var(--texto-branco);
     transition: cubic-bezier(1, 0, 0, 1) 0.5;
@@ -22,9 +21,6 @@ body {
 main {
     max-width: 960px;
     padding: 20px;
-    background-image: url(Images/pro.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .top {
     display: flex;
@@ -63,6 +59,9 @@ footer {
 body {
     padding-top: 35px;
 }
+.form {
+    padding-top: 150px;
+}
 .formulario {
     width: 500px;
     margin: 50px auto;
@@ -70,6 +69,7 @@ body {
     padding: 20px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding-top: 35px;
 }
 input {
     width: 100%;
@@ -82,6 +82,7 @@ input {
     border: 3px solid var(--borda-padrao);
     cursor: pointer;
     transition: 0.4s;
+    width: 30%;
 }
 #enviar:hover {
     border: 3px solid var(--carmesin);
@@ -111,4 +112,22 @@ button:hover {
     border: solid var(--carmesin);
     background-color: var(--carmesin-highlight);
 }
-
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.produto {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.produto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.produto .corpo { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.produto h3 { margin: 0; font-size: 1.05rem; }
+.produto .categoria { font-size: 0.8rem; color: var(--destaque); font-weight: bold; }
+.produto .preco { font-size: 1.2rem; font-weight: bold; }
+.produto .botoes { display: flex; gap: 8px; margin-top: auto; flex-wrap: wrap; }
