@@ -168,8 +168,8 @@ button:hover {
     margin-top: auto; 
     flex-wrap: wrap; }
 
-.check, .senha {
-    display: flex;
+.check {
+    color: black;
 }
 .vitrine {
     padding-top: 30px;
